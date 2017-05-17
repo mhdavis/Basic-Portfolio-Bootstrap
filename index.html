@@ -11,27 +11,32 @@
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Knewave|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
     <!-- Boostrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
 
   <body>
-    
+
       <nav id="custom-navbar-style" class="navbar navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <button id="crazy-button" type="button" class="navbar-toggle collapsed"
+            <button id="collapse-button-style" type="button" class="navbar-toggle collapsed"
             data-toggle="collapse" data-target="#navbar"
             aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+              <span class="custom-icon-style icon-bar"></span>
+              <span class="custom-icon-style icon-bar"></span>
+              <span class="custom-icon-style icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Michael Davis</a>
+            <a id="nav-logo" class="navbar-brand" href="#">Michael Davis</a>
           </div> <!-- End navbar-header -->
           <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-right">
               <li><a class="nav-item custom-nav-style" href="#">About</a></li>
               <li><a class="nav-item custom-nav-style" href="#">Porfolio</a></li>
               <li><a class="nav-item custom-nav-style" href="#">Contact</a></li>
@@ -43,7 +48,7 @@
       <div id="custom-container">
         <div class="container-fluid">
           <div class="row">
-            <div id="main-section" class="col-lg-4-offset-3 col-md-4 col-sm-4">
+            <div id="main-section" class="col-lg-4-offset-3 col-md-4-offset-1 col-sm-4">
               <h1 id="about-me">About Me</h1>
               <hr>
               <div id=profile-wrapper>
@@ -70,7 +75,7 @@
         </div> <!-- end container-fluid -->
       </div> <!-- end custom-container -->
 
-      <footer class="clearfix">
+      <footer>
         <p id="copyright">@ Copyright 2017 Michael Davis</p>
       </footer>
   </body>

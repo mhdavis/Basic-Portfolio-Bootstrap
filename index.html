@@ -6,46 +6,69 @@
     <title>Michael Davis Portfolio</title>
 
     <!-- CSS -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Knewave|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <!-- Boostrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
 
   <body>
-      <nav>
-        <ul class="topnav">
-          <li><a id="nav-logo" class="nav-style" href="#">Michael Davis</a></li>
-          <li><a class="nav-item nav-style" href="#">About</a></li>
-          <li><a class="nav-item nav-style" href="#">Porfolio</a></li>
-          <li><a class="nav-item nav-style" href="#">Contact</a></li>
-        </ul>
+    
+      <nav id="custom-navbar-style" class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button id="crazy-button" type="button" class="navbar-toggle collapsed"
+            data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Michael Davis</a>
+          </div> <!-- End navbar-header -->
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a class="nav-item custom-nav-style" href="#">About</a></li>
+              <li><a class="nav-item custom-nav-style" href="#">Porfolio</a></li>
+              <li><a class="nav-item custom-nav-style" href="#">Contact</a></li>
+            </ul>
+          </div> <!-- End collapse -->
+        </div> <!-- End container -->
       </nav>
 
-      <div id="container" class="clearfix">
-        <section id="main-section">
-          <h1 id="about-me">About Me</h1>
-          <hr>
-          <div id=profile-wrapper>
-            <div id="profile-pic"></div>
-          </div>
-          <p class="about-paragraph">My name is Michael Davis. I'm a fullstack developer in training.
-          I graduated from New College of Florida with a degree in Chemistry.
-        I opted to pursue a career in software engineering because it combines
-      my love of the technical with my love of the artistic.</p>
-          <p class="about-paragraph">A fun fact about me is I've lived in four different continents,
-          growing up in places like Peru, Egypt, Cyprus and Switzerland. I enjoy traveling
-        and experiencing differnet cultures. I'm half-peruvian on my mother's
-      side and am fairly proficient in spanish as a result.</p>
-        </section>
+      <div id="custom-container">
+        <div class="container-fluid">
+          <div class="row">
+            <div id="main-section" class="col-lg-4-offset-3 col-md-4 col-sm-4">
+              <h1 id="about-me">About Me</h1>
+              <hr>
+              <div id=profile-wrapper>
+                <div id="profile-pic"></div>
+              </div>
+              <p class="about-paragraph">My name is Michael Davis. I'm a fullstack developer in training.
+                I graduated from New College of Florida with a degree in Chemistry.
+                I opted to pursue a career in software engineering because it combines
+                my love of the technical with my love of the artistic.</p>
+              <p class="about-paragraph">A fun fact about me is I've lived in four different continents,
+                growing up in places like Peru, Egypt, Cyprus and Switzerland. I enjoy traveling
+                and experiencing differnet cultures. I'm half-peruvian on my mother's
+                side and am fairly proficient in spanish as a result.</p>
+            </div> <!-- end main-section -->
 
-        <aside id="social-media-container">
-          <h2 id="social-media-title">Connect with Me</h2>
-          <hr>
-          <a class="social-anchor" href="https://github.com/mhdavis" target="_blank"><i class="fa fa-github social-btn"></i></a>
-          <a class="social-anchor" href="https://www.linkedin.com/in/michael-davis-1b31b7124/" target="_blank"><i class="fa fa-linkedin social-btn"></i></a>
-          <a class="social-anchor" href="https://stackoverflow.com/users/7643412/mhdavis" target="_blank"><i class="fa fa-stack-overflow social-btn"></i></a>
-        </aside>
-      </div> <!-- end container -->
+              <div id="social-media-container" class="col-lg-4 col-md-4 col-sm-4">
+                <h2 id="social-media-title">Connect with Me</h2>
+                <hr>
+                <a class="social-anchor" href="https://github.com/mhdavis" target="_blank"><i class="fa fa-github social-btn"></i></a>
+                <a class="social-anchor" href="https://www.linkedin.com/in/michael-davis-1b31b7124/" target="_blank"><i class="fa fa-linkedin social-btn"></i></a>
+                <a class="social-anchor" href="https://stackoverflow.com/users/7643412/mhdavis" target="_blank"><i class="fa fa-stack-overflow social-btn"></i></a>
+              </div> <!-- end social-media-container -->
+          </div> <!-- end row -->
+        </div> <!-- end container-fluid -->
+      </div> <!-- end custom-container -->
 
       <footer class="clearfix">
         <p id="copyright">@ Copyright 2017 Michael Davis</p>

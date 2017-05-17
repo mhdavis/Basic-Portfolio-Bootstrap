@@ -6,78 +6,123 @@
     <title>Michael Davis Portfolio</title>
 
     <!-- CSS -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Knewave|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!-- Boostrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
 
   <body>
-      <nav>
-        <ul class="topnav">
-          <li><a id="nav-logo" class="nav-style" href="#">Michael Davis</a></li>
-          <li><a class="nav-item nav-style" href="#">About</a></li>
-          <li><a class="nav-item nav-style" href="#">Porfolio</a></li>
-          <li><a class="nav-item nav-style" href="#">Contact</a></li>
-        </ul>
+
+      <nav id="custom-navbar-style" class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button id="collapse-button-style" type="button" class="navbar-toggle collapsed"
+            data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="custom-icon-style icon-bar"></span>
+              <span class="custom-icon-style icon-bar"></span>
+              <span class="custom-icon-style icon-bar"></span>
+            </button>
+            <a id="nav-logo" class="navbar-brand" href="#">Michael Davis</a>
+          </div> <!-- End navbar-header -->
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="nav-item custom-nav-style" href="#">About</a></li>
+              <li><a class="nav-item custom-nav-style" href="#">Porfolio</a></li>
+              <li><a class="nav-item custom-nav-style" href="#">Contact</a></li>
+            </ul>
+          </div> <!-- End collapse -->
+        </div> <!-- End container -->
       </nav>
 
-      <div id="container" class="clearfix">
-        <section id="main-section">
+
+  <div id="custom-container">
+    <div class="container-fluid">
+      <div class="row">
+        <div id="main-section" class="col-lg-7 col-md-7 col-sm-7">
 
           <!-- Portfolio Section -->
           <h1 id="portfolio-header">Portfolio</h1>
           <hr>
 
-            <a class="portfolio-link" href="#">
-              <div class="portfolio-entry" href="#">
-                <div class="portfolio-banner"></div>
-                <div class="portfolio-info-box">
-                  <p class="portfolio-entry-title">Coming Soon</p>
-                </div>
-              </div>
-            </a>
+          <div class="container">
 
-            <a class="portfolio-link" href="#">
-              <div class="portfolio-entry" href="#">
-                <div class="portfolio-banner"></div>
-                <div class="portfolio-info-box">
-                  <p class="portfolio-entry-title">Coming Soon</p>
-                </div>
-              </div>
-            </a>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <a class="portfolio-link" href="#">
+                  <div class="portfolio-entry" href="#">
+                    <div class="portfolio-banner"></div>
+                    <div class="portfolio-info-box">
+                      <p class="portfolio-entry-title">Coming Soon</p>
+                    </div>
+                  </div>
+                </a>
+              </div> <!-- end col-6 -->
 
-            <a class="portfolio-link" href="#">
-              <div class="portfolio-entry" href="#">
-                <div class="portfolio-banner"></div>
-                <div class="portfolio-info-box">
-                  <p class="portfolio-entry-title">Coming Soon</p>
-                </div>
-              </div>
-            </a>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <a class="portfolio-link" href="#">
+                  <div class="portfolio-entry" href="#">
+                    <div class="portfolio-banner"></div>
+                    <div class="portfolio-info-box">
+                      <p class="portfolio-entry-title">Coming Soon</p>
+                    </div>
+                  </div>
+                </a>
+              </div> <!-- end col-6 -->
+            </div> <!-- end row -->
 
-            <a class="portfolio-link" href="#">
-              <div class="portfolio-entry" href="#">
-                <div class="portfolio-banner"></div>
-                <div class="portfolio-info-box">
-                  <p class="portfolio-entry-title">Coming Soon</p>
-                </div>
-              </div>
-            </a>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <a class="portfolio-link" href="#">
+                  <div class="portfolio-entry" href="#">
+                    <div class="portfolio-banner"></div>
+                    <div class="portfolio-info-box">
+                      <p class="portfolio-entry-title">Coming Soon</p>
+                    </div>
+                  </div>
+                </a>
+              </div> <!-- end col-6 -->
+
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <a class="portfolio-link" href="#">
+                  <div class="portfolio-entry" href="#">
+                    <div class="portfolio-banner"></div>
+                    <div class="portfolio-info-box">
+                      <p class="portfolio-entry-title">Coming Soon</p>
+                    </div>
+                  </div>
+                </a>
+              </div> <!-- end col-6 -->
+            </div> <!-- end row -->
+
+          </div> <!-- end container -->
+        </div> <!-- end main-section -->
 
           <!-- Portfolio Section End -->
-        </section>
+          <div id="social-media-container" class="col-lg-4 col-md-4 col-sm-4">
+            <h2 id="social-media-title">Connect with Me</h2>
+            <hr>
+            <a class="social-anchor" href="https://github.com/mhdavis" target="_blank"><i class="fa fa-github social-btn"></i></a>
+            <a class="social-anchor" href="https://www.linkedin.com/in/michael-davis-1b31b7124/" target="_blank"><i class="fa fa-linkedin social-btn"></i></a>
+            <a class="social-anchor" href="https://stackoverflow.com/users/7643412/mhdavis" target="_blank"><i class="fa fa-stack-overflow social-btn"></i></a>
+          </div> <!-- end social-media-container -->
+        </div> <!-- end row -->
+      </div> <!-- end container-fluid -->
+    </div> <!-- end custom-container -->
 
-        <aside id="social-media-container">
-          <h2 id="social-media-title">Connect with Me</h2>
-          <hr>
-          <a class="social-anchor" href="https://github.com/mhdavis" target="_blank"><i class="fa fa-github social-btn"></i></a>
-          <a class="social-anchor" href="https://www.linkedin.com/in/michael-davis-1b31b7124/" target="_blank"><i class="fa fa-linkedin social-btn"></i></a>
-          <a class="social-anchor" href="https://stackoverflow.com/users/7643412/mhdavis" target="_blank"><i class="fa fa-stack-overflow social-btn"></i></a>
-        </aside>
-      </div> <!-- end container -->
+    <footer>
+      <p id="copyright">@ Copyright 2017 Michael Davis</p>
+    </footer>
 
-      <footer class="clearfix">
-        <p id="copyright">@ Copyright 2017 Michael Davis</p>
-      </footer>
   </body>
 </html>
